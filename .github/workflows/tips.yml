@@ -21,7 +21,8 @@ concurrency:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # pinned: ubuntu-latest is moving to Ubuntu 26, which broke the browser step
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -33,13 +34,27 @@ jobs:
 
       - run: npm ci
 
+      - name: Install Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install virtual display
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb xauth >/dev/null || echo "xvfb install failed - will run headless"
+
       - name: Check for new tips
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_ADMIN_ID: ${{ secrets.TELEGRAM_ADMIN_ID }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
-        run: xvfb-run -a node src/index.js ${{ inputs.force && '--force' || '' }}
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: |
+          echo "chrome: $CHROME_PATH"
+          if command -v xvfb-run >/dev/null; then
+            xvfb-run -a --server-args="-screen 0 1280x900x24" node src/index.js ${{ inputs.force && '--force' || '' }}
+          else
+            node src/index.js ${{ inputs.force && '--force' || '' }}
+          fi
 
       - name: Commit state
         run: |
