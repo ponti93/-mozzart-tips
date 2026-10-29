@@ -3,7 +3,8 @@
     "single|20:45 fiorentina – atalanta : over 2.5 @ 1.50": {
       "label": "Single",
       "status": "pending",
-      "seenAt": "2026-10-29T16:49:04.860Z"
+      "seenAt": "2026-10-29T16:49:04.860Z",
+      "sentAt": "2026-10-29T19:04:06.388Z"
     },
     "vip|17:00 radnicki nis – partizan : 2 @ 1.80": {
       "label": "VIP MATCH",
@@ -517,5 +518,5 @@
     }
   },
   "tgOffset": 0,
-  "updatedAt": "2026-10-29T16:49:04.860Z"
+  "updatedAt": "2026-10-29T19:04:06.388Z"
 }
