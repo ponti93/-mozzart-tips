@@ -12,6 +12,7 @@ const MAX_STATE_ENTRIES = 400;
 const dryRun = process.argv.includes('--dry-run');
 const parseOnly = process.argv.includes('--parse-only');
 const testSend = process.argv.includes('--test-send');
+const force = process.argv.includes('--force');
 
 const token = process.env.TELEGRAM_BOT_TOKEN || '';
 const chatId = process.env.TELEGRAM_CHAT_ID || '';
@@ -106,6 +107,16 @@ async function main() {
       dirty = true;
       if (tip.status === 'won' || tip.status === 'lost') results.push(tip);
       if (tip.status === 'pending') toSend.push(tip); // reposted tip
+    }
+  }
+
+  // --force: re-announce whatever is pending right now, even if already sent
+  if (force) {
+    for (const tip of parsed) {
+      if (tip.status === 'pending' && !toSend.some((t) => t.key === tip.key)) {
+        console.log(`[force] re-sending: ${tip.text}`);
+        toSend.push(tip);
+      }
     }
   }
 

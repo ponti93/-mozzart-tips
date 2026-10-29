@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-send the current pending tip even if it was already announced'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,6 +29,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+
+      - run: npm ci
 
       - name: Check for new tips
         env:
@@ -31,7 +39,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_ADMIN_ID: ${{ secrets.TELEGRAM_ADMIN_ID }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
-        run: node src/index.js
+        run: xvfb-run -a node src/index.js ${{ inputs.force && '--force' || '' }}
 
       - name: Commit state
         run: |

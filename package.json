@@ -12,5 +12,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.16.0"
   }
 }
