@@ -97,17 +97,17 @@ async function main() {
     if (!prev) {
       state.tips[tip.key] = { label: tip.label, status: tip.status, seenAt: now };
       dirty = true;
-      if (tip.status === 'pending') toSend.push(tip);
-      continue;
-    }
-
-    if (prev.status !== tip.status) {
+    } else if (prev.status !== tip.status) {
       prev.status = tip.status;
       prev.seenAt = now;
+      delete prev.sentAt; // reposted tip gets announced again
       dirty = true;
       if (tip.status === 'won' || tip.status === 'lost') results.push(tip);
-      if (tip.status === 'pending') toSend.push(tip); // reposted tip
     }
+
+    // any pending tip that never actually reached the channel (new, reposted,
+    // or seen during a run that failed before sending)
+    if (tip.status === 'pending' && !state.tips[tip.key].sentAt) toSend.push(tip);
   }
 
   // --force: re-announce whatever is pending right now, even if already sent
@@ -123,6 +123,10 @@ async function main() {
   // safety: never flood the channel after downtime
   const overflow = toSend.splice(3);
   if (overflow.length) console.log(`[skip] ${overflow.length} older pending tips ignored`);
+  for (const tip of overflow) {
+    state.tips[tip.key].sentAt = 'skipped';
+    dirty = true;
+  }
 
   for (const tip of results) {
     await deliver(tipMessage(tip, tip.status === 'won' ? '✅ <b>WON</b>' : '❌ <b>LOST</b>'), 'result');
@@ -130,6 +134,10 @@ async function main() {
 
   for (const tip of toSend) {
     await deliver(tipMessage(tip, '🆕 <b>NEW TIP</b>'), 'new tip');
+    if (!dryRun) {
+      state.tips[tip.key].sentAt = now;
+      dirty = true;
+    }
   }
 
   // optional manual sender
