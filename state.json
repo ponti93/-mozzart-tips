@@ -1,0 +1,521 @@
+{
+  "tips": {
+    "single|20:45 fiorentina – atalanta : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "pending",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|17:00 radnicki nis – partizan : 2 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 liverpool – chelsea : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 as roma – cagliari : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:45 leicester – wigan : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|01:00 bolivar – u. de vinto : over 3.5 @ 1.60": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|17:30 freiburg – bayern m. : over 3.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 barcelona – real madrid : over 3.5 @ 1.55": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 lazio – parma : over 2.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|16:00 partizan – cukaricki : 1 @ 1.70": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|19:00 vasteras sk – halmstad : over 2.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:00 al ahli sc – al khaleej : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:45 kauno zalgiris – brann : 2 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 hoffenheim – lyon : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 real madrid – rb leipzig : over 3.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 man city – aek athens : over 3.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 psg – barcelona : over 3.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:00 termalica b-b. – puszcza : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 trabzonspor – besiktas : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|17:15 paris fc – rennes : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:00 ac milan – atalanta : over 2.5 @ 1.65": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|16:00 leicester – doncaster : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:30 betis – barcelona : over 3.5 @ 1.60": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|19:30 sk rapid – hartberg : over 3.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 brommapojkarna – djurgarden : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 ferencvaros – plzen : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:45 hajduk split – ajax : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 betis – fc porto : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 as roma – real madrid : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 atl. madrid – man utd : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 viking – bayern m. : over 3.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:00 inter – parma : 1 & over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:45 netherlands – serbia : 1 & over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|15:00 frosinone – benevento : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 denmark – portugal : over 2.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:45 germany – serbia : 1 & over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:30 portugal u19 – netherlands u19 : over 2.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:15 panathinaikos – lyon : panathinaikos -8.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 scotland – switzerland : 2 @ 1.85": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 sweden – poland : 1 @ 1.90": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:45 germany – greece : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|16:00 bristol rovers – exeter : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:00 rwanda – liberia : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 morocco – gabon : marocco -1.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:00 andorra – malta : over 2.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:45 netherlands – germany : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|03:30 seattle sounders – real salt lake : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 worksop – afc telford : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 fenerbahce – besiktas : over 159.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|00:00 guabira – sa bulo bulo : over 2.5 @ 1.70": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|14:00 getafe – malaga : 1 @ 1.85": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 le mans – lorient : over 2.5 @ 1.90": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|15:30 e. frankfurt – freiburg : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 monaco – lens : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 brentford – chelsea : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:30 malaga – villarreal : over 2.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 celtic – ferencvaros : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:45 ararat-armenia – sparta prague : 2 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 sturm g. – rennes : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:00 ajax – willem ii : 1 & over 3.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:30 elche – real m. : 2 & over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 leeds – newcastle : over 2.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 midtjylland – brondby : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|17:30 man utd – man city : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 real madrid – rayo vallecano : over 3.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:30 fc koln – werder bremen : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:30 union berlin – schalke : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 fc copenhagen – horsens : over 2.5 @ 1.60": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 man utd – sabah baku : man utd -2.5 @ 1.70": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 napoli – arsenal : 2 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 sporting cp – galatasaray : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:45 club brugge kv – aston villa : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 marseille – paris fc : over 2.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 barnsley – blackpool : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 bristol rovers – colchester : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:30 wolfsberger ac – lask : 2 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|19:00 gais – brommapojkarna : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 djurgarden – mjallby : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|15:00 liberec – hradec kralove : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|23:15 bolivar – the strongest : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|17:00 levante – betis : over 2.5 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:30 tottenham – newcastle : over 2.5 @ 1.65": {
+      "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:00 fc volendam – dordrecht : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:30 bayern m. – stuttgart : 1 & over 3.5 @ 1.70": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:00 iberia 1999 – jagiellonia : 2 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:00 qarabag – twente : over 2.5 @ 1.60": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 viking – din. zagreb : over 2.5 @ 1.60": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|16:00 tobol – kaisar k. : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 lask – celtic : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:15 gil vicente – casa pia : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|19:00 brondby – silkeborg : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|17:00 atl. madrid – villarreal : over 2.5 @ 1.70": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|15:00 man city – bournemouth : over 2.5 @ 1.55": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|18:00 luzern – lausanne : 1 @ 1.90": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:30 espanyol – real madrid : over 2.5 @ 1.70": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 marseille – strasbourg : 1 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|18:00 vejle – esbjerg : over 2.5 @ 1.50": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|20:45 hearts – sk rapid : over 2.5 @ 1.75": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|20:00 crvena zvezda – plzen : over 2.5 @ 1.60": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:00 celtic – lask : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|01:30 philadelphia union – inter miami : over 3.5 @ 1.85": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "single|21:00 din. zagreb – viking : over 2.5 @ 1.65": {
+      "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    },
+    "vip|21:15 fram – stjarnan : 1 @ 1.80": {
+      "label": "VIP MATCH",
+      "status": "won",
+      "seenAt": "2026-10-29T16:49:04.860Z"
+    }
+  },
+  "tgOffset": 0,
+  "updatedAt": "2026-10-29T16:49:04.860Z"
+}
