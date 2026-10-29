@@ -80,6 +80,8 @@ After that it runs by itself at the top of every hour.
 
 - `node src/index.js --parse-only` — show what the parser sees right now.
 - `node src/index.js --dry-run` — full run, prints instead of sending.
+- `node src/index.js --test-send` — send one test message to the channel (use it to check
+  the token and chat id).
 - `state.json` is the memory: delete it (and run manually) to re-announce the current tip,
   or to start fresh.
 - **Manual sender:** after you `/start` the bot, send it `/send any text` and it will be
