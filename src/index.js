@@ -39,7 +39,7 @@ function saveState(state) {
 }
 
 function tipMessage(tip, header) {
-  return `${header}\n<b>${esc(tip.label)}</b>\n${esc(tip.text)}\n\n${SITE}`;
+  return `${header}\n${esc(tip.text)}\n\n${SITE}`;
 }
 
 async function deliver(text, label) {
@@ -65,14 +65,23 @@ async function main() {
   console.log(`[fetch] ok via ${page.via}, ${page.html.length} bytes`);
 
   const tips = parseTips(page.html);
-  console.log(`[parse] ${tips.length} tip blocks found`);
-  for (const t of tips.slice(0, 6)) {
-    console.log(`   ${t.status.padEnd(8)} [${t.label}] ${t.text}`);
+  const singles = tips.filter((t) => t.label === 'Single');
+  const notTips = singles.filter((t) => t.kind !== 'tip');
+  const parsed = singles.filter((t) => t.kind === 'tip');
+
+  console.log(
+    `[parse] ${tips.length} tip blocks (${singles.length} Single), ${parsed.length} real tips, ${notTips.length} placeholders/notes`
+  );
+  for (const t of parsed.slice(0, 6)) {
+    console.log(`   ${t.status.padEnd(8)} ${t.text}`);
+  }
+  for (const t of notTips.slice(0, 3)) {
+    console.log(`   ${'SKIP'.padEnd(8)} [${t.kind}] ${t.text.slice(0, 80)}`);
   }
 
   if (parseOnly) {
     console.log('\n--- pending ---');
-    tips.filter((t) => t.status === 'pending').forEach((t) => console.log(`  ${t.label}: ${t.text}`));
+    parsed.filter((t) => t.status === 'pending').forEach((t) => console.log(`  ${t.text}`));
     return;
   }
 
@@ -81,7 +90,7 @@ async function main() {
   const results = [];
   let dirty = false;
 
-  for (const tip of tips) {
+  for (const tip of parsed) {
     const prev = state.tips[tip.key];
 
     if (!prev) {

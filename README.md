@@ -1,8 +1,13 @@
 # Mozzart 1x2 — tip watcher → Telegram
 
-Checks `mozzart1x2.com` once an hour. When the site publishes a new tip (the line
-written in **white**, usually labelled `Single :` or `VIP MATCH :`), it posts it to
-your Telegram channel. When that tip is later settled, it posts **WON** or **LOST**.
+Checks `mozzart1x2.com` once an hour. When the site publishes a new **`Single :`** tip
+(the line written in **white**), it posts it to your Telegram channel. When that tip is
+later settled, it posts **WON** or **LOST**.
+
+`VIP MATCH :` blocks are ignored.
+
+Filler that appears while the tip is not ready yet — `...`, "tips coming soon at 18:00",
+"will be posted soon" and similar — is recognised as a placeholder and never sent.
 
 Runs on GitHub Actions — no server, no VPS.
 
@@ -15,7 +20,6 @@ GitHub Actions (hourly) → fetch page → parse tip blocks → compare with sta
 
 ```
 🆕 NEW TIP
-Single
 20:45 Fiorentina – Atalanta : Over 2.5 @ 1.50
 
 https://mozzart1x2.com/
@@ -25,7 +29,6 @@ and later, when the colour changes:
 
 ```
 ✅ WON
-Single
 20:45 Fiorentina – Atalanta : Over 2.5 @ 1.50
 ```
 
@@ -75,6 +78,25 @@ raises the rate limit.
 
 **Actions** tab → enable workflows → open **Mozzart tip watcher** → **Run workflow**.
 After that it runs by itself at the top of every hour.
+
+## Why GitHub Actions and not Cloudflare Workers
+
+Both are free, but they are free in different ways:
+
+| | GitHub Actions | Cloudflare Workers |
+| --- | --- | --- |
+| Price | free (public repo: unlimited minutes; private: 2000 min/mo) | free — 100k requests/day |
+| Fastest schedule | 5 min min., usually 5–15 min late | 1 min |
+| CPU limit | none that matters | **10 ms per run** on the free plan |
+| Where the code lives | your git repo, versioned, full logs | dashboard / wrangler, no history |
+| Needs a card | no | no |
+
+For this job GitHub wins: parsing a 240 KB page is cheap but not *10 ms* cheap, and an
+hourly schedule is far away from the 5-minute minimum. Cloudflare would only be better if
+you wanted a check every 1–2 minutes.
+
+Neither one fixes the real bottleneck — the host itself — the site is behind Cloudflare's
+bot challenge, so the script reads it through `r.jina.ai` either way.
 
 ## Useful bits
 

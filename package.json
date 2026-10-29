@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dry": "node src/index.js --dry-run",
-    "parse": "node src/index.js --parse-only"
+    "parse": "node src/index.js --parse-only",
+    "test": "node test/parse.test.js"
   },
   "engines": {
     "node": ">=20"
