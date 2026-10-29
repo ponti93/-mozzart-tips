@@ -11,6 +11,7 @@ const MAX_STATE_ENTRIES = 400;
 
 const dryRun = process.argv.includes('--dry-run');
 const parseOnly = process.argv.includes('--parse-only');
+const testSend = process.argv.includes('--test-send');
 
 const token = process.env.TELEGRAM_BOT_TOKEN || '';
 const chatId = process.env.TELEGRAM_CHAT_ID || '';
@@ -51,6 +52,11 @@ async function deliver(text, label) {
 }
 
 async function main() {
+  if (testSend) {
+    await deliver('✅ <b>Tip watcher connected</b>\nNew tips from mozzart1x2.com will appear here.', 'test');
+    return;
+  }
+
   const page = await fetchPage();
   if (!page) {
     console.error('[fatal] could not load the page (direct + jina both failed)');
