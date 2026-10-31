@@ -517,11 +517,16 @@
     },
     "single|19:00 al shabab – al ahli sc : over 2.5 @ 1.50": {
       "label": "Single",
+      "status": "won",
+      "seenAt": "2026-10-31T19:03:24.123Z"
+    },
+    "single|16:00 man city – brighton : over 2.5 @ 1.50": {
+      "label": "Single",
       "status": "pending",
-      "seenAt": "2026-10-30T16:30:24.524Z",
-      "sentAt": "2026-10-30T16:30:24.524Z"
+      "seenAt": "2026-10-31T19:03:24.123Z",
+      "sentAt": "2026-10-31T19:03:24.123Z"
     }
   },
   "tgOffset": 0,
-  "updatedAt": "2026-10-30T16:30:24.524Z"
+  "updatedAt": "2026-10-31T19:03:24.123Z"
 }
