@@ -522,11 +522,16 @@
     },
     "single|16:00 man city – brighton : over 2.5 @ 1.50": {
       "label": "Single",
+      "status": "lost",
+      "seenAt": "2026-11-01T17:34:44.747Z"
+    },
+    "single|16:15 racing santander – real m. : real m. -1.5 @ 1.60": {
+      "label": "Single",
       "status": "pending",
-      "seenAt": "2026-10-31T19:03:24.123Z",
-      "sentAt": "2026-10-31T19:03:24.123Z"
+      "seenAt": "2026-11-01T17:34:44.747Z",
+      "sentAt": "2026-11-01T17:34:44.747Z"
     }
   },
   "tgOffset": 0,
-  "updatedAt": "2026-10-31T19:03:24.123Z"
+  "updatedAt": "2026-11-01T17:34:44.747Z"
 }
