@@ -532,11 +532,10 @@
     },
     "single|20:45 atalanta – parma : over 2.5 @ 1.55": {
       "label": "Single",
-      "status": "pending",
-      "seenAt": "2026-11-02T19:06:38.773Z",
-      "sentAt": "2026-11-02T19:06:38.773Z"
+      "status": "won",
+      "seenAt": "2026-11-03T09:10:32.436Z"
     }
   },
   "tgOffset": 0,
-  "updatedAt": "2026-11-02T19:06:38.773Z"
+  "updatedAt": "2026-11-03T09:10:32.436Z"
 }
